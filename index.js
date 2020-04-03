@@ -175,9 +175,17 @@ function processDuplicateFree(list, callback) {
  * 
  * [2] Invoking `lowerCaseStrings` with `['a', 'b', 'c' ]` will return `[ 'a', 'b', 'c' ]`.
 */
-function lowerCaseStrings(/* code here */) {
-  /* code here */
+function lowerCaseStrings(strings) {
+  const arrayFruits = [];
+  const lowerFruits = strings.forEach(function(str) {
+    arrayFruits.push(str.toLowerCase());
+  })
+  return arrayFruits;
 }
+
+// console.log(lowerCaseStrings(['Orange', 'APPLE', 'banana', 'mAnGo', 'DURIAN']));
+// console.log(lowerCaseStrings(['a', 'b', 'c']));
+
 
 /**
  * ### Challenge `isItAnApple`
