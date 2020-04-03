@@ -18,6 +18,8 @@ function processFirstItem(stringList, callback) {
   return callback(stringList[0])
 }
 
+// console.log(processFirstItem(['foo', 'bar'], (str) => str + str));
+
 // ⭐️ Example Challenge END ⭐️
 
 
@@ -52,6 +54,9 @@ function processLength(list, callback) {
   return callback(list.length); 
 }
 
+// console.log(processLength(['foo', 'bar'], (num) => num + 1000));
+// console.log(processLength([], (num) => 'There are ' + num));
+
 /**
  * ### Challenge `processLastItem`
  * 
@@ -69,6 +74,8 @@ function processLength(list, callback) {
 function processLastItem(stringList, callback) {
   return callback(stringList[stringList.length - 1])
 }
+
+// console.log(processLastItem(['foo', 'bar'], (str) => str + str));
 
 /**
  * ### Challenge `processSum`
@@ -88,9 +95,13 @@ function processLastItem(stringList, callback) {
  * [2] Invoking `processSum` passing `-5`, '-1', and `(num) => num + 1000`,
  * should return 994.
 */
-function processSum(/* CODE HERE */) {
-  /* CODE HERE */
+function processSum(num1, num2, callback) {
+  return callback(num1 + num2)
 }
+
+// console.log(processSum(10, 30, (num) => num + " is a big number!"));
+// console.log(processSum(-5, -1 , (num) => num + 1000));
+
 
 /**
  * ### Challenge `processProduct`
