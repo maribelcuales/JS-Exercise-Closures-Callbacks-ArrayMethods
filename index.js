@@ -361,6 +361,7 @@ function tallyUpDonations(runners) {
 
 // console.log(tallyUpDonations(runners));
 
+
 /////////////// CLOSURES ///////////////
 /////////////// CLOSURES ///////////////
 
@@ -371,11 +372,14 @@ function tallyUpDonations(runners) {
  * Study the code for counter1 and counter2. Answer the questions below.
  * 
  * 1. What is the difference between counter1 and counter2?
- * 
+ - counter1 utilizes the function 'counterMaker()' which has been defined elsewhere while counter2 is a function declaration. 
+
  * 2. Which of the two uses a closure? How can you tell?
- * 
+ - counter1 uses closure. Closure is enables us to use code that has been defined elsewhere. In this case, counter1 made us of the counterMaker function.  
+ 
  * 3. In what scenario would the counter1 code be preferable? In what scenario would counter2 be better? 
- *
+- counter1 is ideal for a setup where one has to reuse a function in different parts of the code. counter2 is ideal when one is writing a simple code. 
+ 
 */
 
 // counter1 code
