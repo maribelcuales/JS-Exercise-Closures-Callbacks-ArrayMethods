@@ -234,9 +234,17 @@ function isItAnApple(strings) {
  * 
  * [2] Invoking `removeApple` with `['a', 'b', 'c' ]` will return `[ 'a', 'b', 'c' ]`.
 */
-function removeApple(/* code here */) {
-  /* code here */
+function removeApple(strings) {
+  const noApple = strings.filter(function(fruit) {
+    return fruit !== 'apple';
+  })
+  return noApple;  
 }
+
+// console.log(removeApple(['orange', 'apple', 'banana', 'apples', 'Apple', 'mango']));
+// console.log(removeApple(['a', 'b', 'c' ]));
+
+
 
 /**
  * ### Challenge `stringSmash`
