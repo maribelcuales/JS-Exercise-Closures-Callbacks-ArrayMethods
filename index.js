@@ -420,9 +420,22 @@ function counter2() {
  * counter() // should return 0
  * etc
 */
-function counterMakerWithLimit(/* CODE HERE */) {
-  /* CODE HERE */
+function counterMakerWithLimit(maxNum) {
+  let counter3 = 0;
+  return function() {
+    if (counter3 > maxNum) {
+      counter3 = 0;
+    }
+    return counter3++;
+  }
 }
+
+const countCounter = counterMakerWithLimit(3);
+console.log(countCounter()); // should return 0
+console.log(countCounter()); // should return 1
+console.log(countCounter()); // should return 2
+console.log(countCounter()); // should return 3
+console.log(countCounter()); // should return 0
 
 /////////////// END OF CHALLENGE ///////////////
 /////////////// END OF CHALLENGE ///////////////
